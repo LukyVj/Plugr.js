@@ -29,6 +29,15 @@ h2,h3,h4,h5,h6{
   font-family: 'Josefin Slab', sans-serif;
   font-weight: 600 !important;
 }
+
+.hero h1, 
+.hero h2, 
+.hero h3{
+  line-height: 60px;
+}
+.hero footer{
+  padding: 1em 0 0;
+}
 .material-layout{
   margin-top: 60px;
 }
