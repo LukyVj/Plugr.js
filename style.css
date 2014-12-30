@@ -18,7 +18,11 @@
   -moz-osx-font-smoothing: grayscale;
   font-size: 30px;
 }
+body{
+  background: url(http://subtlepatterns.com/patterns/eight_horns.png) !important;
+    background-attachment: fixed !important;
 
+}
 h1{
   font-family: 'Josefin Slab', sans-serif;
   color: #607d8b;
