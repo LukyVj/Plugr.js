@@ -1,4 +1,155 @@
-<h1>PlugR.js</h1>
-<div id="main"></div> 
+<html>
+<head>
+    <title>Plugr.js</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="material-design">
+
+    <div class="material-navigation-left-bluegrey-fixed">
+      <div class="navigation-inner"> 
+        <div class="navigation-content">
+          <a href="#" class="brand-logo">Plugr.js</a>
+      </div>
+      <ul class="navigation-side">
+          <li><a href="#">Side items</a></li>                  
+          <li><a href="#">Side items</a></li>                  
+          <li><a href="#">Side items</a></li>                  
+      </ul>
+  </div>
+</div>
+
+<div class="material-layout">
+    <div class="bit-1 panel t-center">
+        <header>
+            <h1>Plugr.js</h1>
+            <h3>Stop losing time with your plugins and libraries integration</h3>
+        </header>
+        <div class="panel-body">
+            <p>With Plugr, you can add / remove your plugins in a less effort and you don't have to lose your time tracking your different plugin's Scripts or stylesheets.</p>
+        </div>
+        <a href="#" class="material-btn-lightblue">Download <span class="m-icon md-file-file-download"></span></a>
+        <a href="#" class="material-btn-green">Github <span class="m-icon md-file-cloud"></span></a>
+    </div>
+    <div class="bit-1 panel">
+        <div class="bit-3">
+            <header class="t-center">
+                <h3>jQuery free</h3>
+            </header>
+            <div class="panel-body">
+                <p>Plugr does not use jQuery to work, or any other third party libraries</p>
+            </div>
+        </div>
+
+        <div class="bit-3">
+            <header class="t-center">
+                <h3>Lightweight</h3>
+            </header>
+            <div class="panel-body">
+                <p>Plugr is light as a feather, it's less than 1ko weight minified</p>
+            </div>
+        </div>
+
+        <div class="bit-3">
+            <header class="t-center">
+                <h3>Works everywhere</h3>
+            </header>
+            <div class="panel-body">
+                <p>From IE to Chrome, or a mobile to a desktop, Plugr will work on any browser that have JavaScript enabled. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bit-1 panel">
+        <header>
+            <h3>How to use it</h3>
+        </header>
+        <div class="panel-body">
+                <p>Plugr is really simple to use, you just have to download the plugin, and load it to your document as the following :</p>
+
+                <div class="bit-3">
+                    <header>
+                        <h4>Load JS and CSS files at the same time</h4>
+                    </header>   
+
+                    <pre><code class="html">&lt;html>
+    &lt;head>
+        &lt;title> Your website &lt;/title>
+    &lt;/head>
+
+    &lt;body>
+    &lt;!-- Your content -->
+
+    &lt;script type="text/javascript" src="path/to/plugr.js">&lt;/script>
+    &lt;script type="text/javascript">
+        plugr(['aCssFramework','aResponsiveStylesheet'], ['aJavascriptPlugin', 'anOtherPlugin']);
+    &lt;/script>    
+    &lt;/body>
+&lt;/html>                    
+                </code></pre>
+                </div>
+
+                <div class="bit-3">
+                    <header>
+                        <h4>Load some files with a delay</h4>
+                    </header>   
+
+                    <pre><code class="html">&lt;html>
+    &lt;head>
+        &lt;title> Your website &lt;/title>
+    &lt;/head>
+
+    &lt;body>
+    &lt;!-- Your content -->
+
+    &lt;script type="text/javascript" src="path/to/plugr.js">&lt;/script>
+    &lt;script type="text/javascript">
+        plugr(['someCss'], ['jquery']);  
+        plugrDelay([''], ['anOtherScript'], 100);
+    &lt;/script>    
+    &lt;/body>
+&lt;/html>                    
+                </code></pre>
+                </div>
+
+                <div class="bit-3">
+                    <header>
+                        <h4>Log the results to debug</h4>
+                    </header>   
+
+                    <pre><code class="html">&lt;html>
+    &lt;head>
+        &lt;title> Your website &lt;/title>
+    &lt;/head>
+
+    &lt;body>
+    &lt;!-- Your content -->
+
+    &lt;script type="text/javascript" src="path/to/plugr.js">&lt;/script>
+    &lt;script type="text/javascript">
+        plugr(['!someCss'], ['!jquery']);  
+        plugrDelay([''], ['!anOtherScript'], 100);
+    &lt;/script>    
+    &lt;/body>
+&lt;/html>                    
+                </code></pre>
+                </div>
+            </div>
+    </div>
+</div>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 
 <script type="text/javascript" src="plugr.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+    plugr(['highlight'],['jquery','highlight']);
+    plugrDelay(['lemonade','framaterial'],['framaterial','main'], 100);
+}
+
+
+</script>
+
+
+
+</body>
+</html>
